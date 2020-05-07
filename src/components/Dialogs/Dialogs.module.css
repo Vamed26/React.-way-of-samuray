@@ -1,24 +1,24 @@
-.dialogsItem {
+.dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
 }
-.dialogs {
+.DialogItem {
     padding: 10px;
+    color: black;
 
 }
 
 .dialog{
-
 }
 .dialogs .active {
-    color: white;
+    
 }
 
 .messages {
     padding: 10px;
 
 }
-.message {
+.dialogs .message {
     
-
+column-rule: blue;
 }

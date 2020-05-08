@@ -7,7 +7,7 @@ const ProfileInfo =() => {
         <div>
         <img src='https://storge.pic2.me/upload/624/584d22148c69d.jpg' />
     </div>
-    <div>
+    <div className={s.description}>
         ava+description
     </div>
     </div>

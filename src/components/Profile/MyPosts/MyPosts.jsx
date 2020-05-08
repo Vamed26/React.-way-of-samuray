@@ -8,10 +8,13 @@ const MyPosts = () => {
         <div className={s.bird}>
             <img src="https://assets.jpegmini.com/user/images/slider_puffin_before_mobile.jpg" />
         </div>
-        <div>
+        <div className={s.NewPosts}>
             <textarea className={s.text}></textarea>
-            <button>Add post</button>
-            <button>Remove</button>
+            <div>
+                
+                <button>Add post</button>
+                <button>Remove</button>
+            </div>
         </div>
         <div><h4>My Posts</h4>
         </div>

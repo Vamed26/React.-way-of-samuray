@@ -1,6 +1,6 @@
 
   .item {
-      color: #ffffff;
+      color: black;
   }
   .text {
     color: teal;
@@ -11,8 +11,11 @@
    border-radius: 40px;
   }
   .like {
+    color:blue;
+  }
+ .number {
     color: red;
   }
-  .number {
-    color: royalblue;
+  .message {
+    color: chocolate;
   }

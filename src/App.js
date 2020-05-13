@@ -13,15 +13,18 @@ import Settings from './components/Settings/Settings';
 
 
 
-const App = () => {
+const App = (props) => {
+
   return (
     <BrowserRouter>
       <div className="app-wraper">
         <Header />
         <Navbar />
         <div className="content">
-          <Route path='/profile' component={Profile} />
-          <Route path='/dialogs' component={Dialogs} />
+          <Route path='/profile' render={ ()=> <Profile postData={props.postData}/>} />
+          <Route path='/dialogs' render={ ()=> <Dialogs messageData={props.messageData} dialogData={props.dialogData}/>} />
+          
+          
           <Route path='/news' component={News} />
           <Route path='/music' component={Music} />
           <Route path='/settings' component={Settings} />

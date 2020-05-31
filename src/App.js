@@ -21,8 +21,17 @@ const App = (props) => {
         <Header />
         <Navbar />
         <div className="content">
-          <Route path='/profile' render={ ()=> <Profile postData={props.state.profilePage.postData} addPost={props.addPost}/>} />
-          <Route path='/dialogs' render={ ()=> <Dialogs messageData={props.state.dialogsPage.messageData} dialogData={props.state.dialogsPage.dialogData}/>} />
+          <Route path='/profile' render={ ()=> <Profile 
+          postData={props.state.profilePage.postData} 
+          newPostText={props.state.profilePage.newPostText} 
+          addPost={props.addPost}
+          updateNewPostText={props.updateNewPostText}/>} 
+            />
+          <Route path='/dialogs' render={ ()=> <Dialogs messageData={props.state.dialogsPage.messageData}
+           dialogData={props.state.dialogsPage.dialogData}
+           newSendText={props.state.dialogsPage.newSendText} 
+           addSend={props.addSend}
+           updateNewSendText={props.updateNewSendText}/>} />
         
           <Route path='/news' render={ ()=> <News newsData={props.state.newsData}/>} />
           <Route path='/music' component={Music} />
